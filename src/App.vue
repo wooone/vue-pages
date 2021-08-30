@@ -1,17 +1,21 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <h1>test</h1>
+  <el-button>
+    我是 ElButton
+  </el-button>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import { defineComponent } from 'vue'
+import { ElButton } from 'element-plus'
 
-export default {
+export default defineComponent({
   name: 'App',
   components: {
-    HelloWorld
+    ElButton
   }
-}
+})
 </script>
 
 <style>
