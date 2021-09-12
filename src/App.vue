@@ -24,25 +24,27 @@
 
     <el-main>
       <el-row :gutter="20">
-        <el-col :span="8" v-for="(o, index) in 2" :key="o" :offset="index > 0 ? 2 : 0">
-          <el-card shadow="hover">
-            <img src="./assets/3.png" class="image">
-            <div style="padding: 14px;">
-              <span>好吃的汉堡</span>
-              <div class="bottom">
-                <time class="time">{{ currentDate }}</time>
-                <el-button type="text" class="button">操作按钮</el-button>
-              </div>
-            </div>
-          </el-card>
+        
+        <el-col :span="6"> 
+            <el-image :src="src" :preview-src-list="srcList"></el-image>
         </el-col>
+        
+        <el-col :span="6">
+          <div class="grid-content bg-purple">
+            <el-image :src="src1" :preview-src-list="srcList"></el-image>
+          </div>
+        </el-col>
+
+        <el-col :span="6"><div class="grid-content bg-purple"><el-image :src="src1"></el-image></div></el-col>
+        <el-col :span="6"><div class="grid-content bg-purple"><el-image :src="src"></el-image></div></el-col>
       </el-row>
+
       <el-row :gutter="20">
         <el-col :span="8" v-for="(o, index) in 2" :key="o" :offset="index > 0 ? 2 : 0">
           <el-card shadow="hover">
-            <img src="https://shadow.elemecdn.com/app/element/hamburger.9cf7b091-55e9-11e9-a976-7f4d0b07eef6.png" class="image">
+            <img src="https://miro.medium.com/max/676/1*XEgA1TTwXa5AvAdw40GFow.png" class="image">
             <div style="padding: 14px;">
-              <span>好吃的汉堡</span>
+              <span>網頁設計</span>
               <div class="bottom">
                 <time class="time">{{ currentDate }}</time>
                 <el-button type="text" class="button">操作按钮</el-button>
@@ -60,24 +62,30 @@
 
 <script>
 import { defineComponent } from 'vue'
-import { ElContainer,ElMain,ElAside,ElHeader,ElCol, ElRow } from 'element-plus'
-import { ElCard,ElButton } from 'element-plus'
+import { ElContainer,ElMain,ElAside,ElHeader,ElImage,ElCard,ElButton } from 'element-plus'
+import { ElRow,ElCol } from 'element-plus'
 import { ElAvatar} from 'element-plus'
 import '/node_modules/element-plus/dist/index.css'
 
 export default defineComponent({
   name: "ElementPlus",
   components: {
-    ElContainer,ElMain,ElAside,ElHeader,ElCol, ElRow,
-    ElAvatar,ElCard,ElButton,
+    ElContainer,ElMain,ElAside,ElHeader,ElImage
+    ,ElCol,ElRow,ElAvatar,ElCard,ElButton
   },
   data() {
     return {
+       src:
+         "https://lh3.googleusercontent.com/nzVZhqPqHnjCLgS4zp9aY0is4hVFC4vnTwWD2vLH4z09WqHpd5ng9YmOeQZfcyZ1fci8WvIwlCUMFThL3lrXAuNaM8w7kPUULNJmxoYRY3DRnDCGRGANH14wEJ-9sRZIIOVARc_z=w1200",
        src1:
-         "https://cube.elemecdn.com/6/94/4d3ea53c084bad6931a56d5158a48jpeg.jpeg",
+          "https://lh3.googleusercontent.com/01idxha_HVWa5xsVXt570FLVhMuL25GTQ-rTHCgHktcTil1y3y7XVVE22EAah8TfsJaqeWEYI0xcne9h6kYlVm8ydS6doCCisMwR3sE15cmMgRDl5ZzBh_jg3G0S752f0N9hFQ4C=w1200",  
        currentDate: new Date(),
        circleUrl:
-         'https://miro.medium.com/max/676/1*XEgA1TTwXa5AvAdw40GFow.png'
+         'https://miro.medium.com/max/676/1*XEgA1TTwXa5AvAdw40GFow.png',
+      srcList: [
+          'https://fuss10.elemecdn.com/8/27/f01c15bb73e1ef3793e64e6b7bbccjpeg.jpeg',
+          'https://fuss10.elemecdn.com/1/8e/aeffeb4de74e2fde4bd74fc7b4486jpeg.jpeg',
+        ],
     };
   },
 });
