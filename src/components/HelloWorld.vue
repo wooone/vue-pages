@@ -1,8 +1,5 @@
 <template>
   <div class="hello">
-    <h1>TESTING</h1>
-    <h2>testing</h2>
-
   </div>
 </template>
 

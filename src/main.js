@@ -7,10 +7,11 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 import { faFacebookF,faInstagram } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import { fab } from '@fortawesome/free-brands-svg-icons'
+import router from './router'
 
 library.add(faFacebookF, fab, faInstagram);
 
-createApp(App)
+createApp(App).use(router)
 .component("font-awesome-icon", FontAwesomeIcon)
 .mount('#app')
-createApp(ElementPlus).mount('ElementPlus')
+createApp(ElementPlus).use(router).mount('ElementPlus')
