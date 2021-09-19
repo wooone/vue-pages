@@ -18,13 +18,13 @@
 
         <el-col :span="6">
           <div class="grid-content bg-purple">
-            <el-image :src="src2"></el-image>
+            <el-image :src="src2" :preview-src-list="srcList2"></el-image>
           </div>
         </el-col>
 
         <el-col :span="6">
           <div class="grid-content bg-purple">
-            <el-image :src="src3"></el-image>
+            <el-image :src="src3" :preview-src-list="srcList3"></el-image>
           </div>
         </el-col>
       </el-row>
@@ -32,12 +32,12 @@
       <el-row :gutter="20">
         
         <el-col :span="6"> 
-            <el-image :src="src4" :preview-src-list="srcList"></el-image>
+            <el-image :src="src4" :preview-src-list="srcList4"></el-image>
         </el-col>
         
         <el-col :span="6">
           <div class="grid-content bg-purple">
-            <el-image :src="src5" :preview-src-list="srcList"></el-image>
+            <el-image :src="src5" :preview-src-list="srcList5"></el-image>
           </div>
         </el-col>
       </el-row>
@@ -79,8 +79,23 @@ export default defineComponent({
 
         ],
       srcList1: [
-          'https://fuss10.elemecdn.com/8/27/f01c15bb73e1ef3793e64e6b7bbccjpeg.jpeg',
-          'https://fuss10.elemecdn.com/1/8e/aeffeb4de74e2fde4bd74fc7b4486jpeg.jpeg',
+          'https://lh3.googleusercontent.com/lym6CjGJri7Nu25v-MLB9TqNu2RltPWqI9TzBViNnND0fIdUCTqgtLfY1otUaINQcvEAKTtV1HtHuqZLtLLo5dUwXqQuiUvaB4K1L13ObAFPcWtpuhMs4uCYibz8e9le8VqJRY75Dw=w1800',
+          'https://lh3.googleusercontent.com/TO6B2n_MLcBv1ruwyW7e3fJqNXqATP3MX2hCIahW3w-5isdA_lx7woRRCAjCDQCr_aD_hp_n-GWqkQ-EISWYSX4mDleb6R6v0lEGWt2aQM2ARl38P8A2paKTyb5sir2hwBhuE_1tGg=w1800',
+          'https://lh3.googleusercontent.com/mtE4qgwm5RJWMOY4qVVyOvysBRNNq8wssfZwyn3NwQiCqAAbvMiKXtNe23YxEqnYTq2Yz6qz8jtf0ZuSzeDr_s2-c5TxVrH4uurcvQlCW9X-N4dKcq-zjoyGu_-vYM3elMU4zYREBQ=w1800',
+        ],
+      srcList2: [
+          'https://lh3.googleusercontent.com/GgzRXsbqBkQMLyVL0EppZtGunL8zvo3NTsAv8AJW749L2x9FVwHWRE4tf5W3cHLwU47mctSwIi-uviiyAZIplOscYVOeJ12s7LrenEBEXJoXidO5kn47vOHniGq2XyZ_t_WFJ38pVA=w1800',
+          'https://lh3.googleusercontent.com/T-umkREC2_u2mPpi8ukcmDr9osHDYboeuAM0H7gF18ll050CwL9byau7BAbSf2Sp7pEHtb3tPOXCf4hLizkh_lMWMu50YjZstvkkAaK-N255gF7VZfeQESCh8yuToTsWo5CzyFG38g=w1800',
+          'https://lh3.googleusercontent.com/x6M6bmx94JPYa6ApDICxpUF1Dh-0uVEpGzvNO1TaySY8wDCtQNmRGA0S9NDQZ9ZdLRv_JMuquGQtC-o03Vi87AxuwBGMOZYN9DSpd97HaeuOUwAKRKA9tibBX26oQBv1AMr-spcjCw=w1800',
+        ],
+      srcList3: [
+          'https://lh3.googleusercontent.com/q8cezu9ev-OEYx5_kkXk-FIRGk1-4FDwLUej8GrNqlSMC5RmSfB3oHc8nAshFtB2g2TR3bJO19OPms04kh7ICQFJQwqZiDMGd6_TsnpqsRRtqcrYjJKPAD8U6vwH7slTniZLm9bWzg=w1800',
+        ],
+      srcList4: [
+          'https://lh3.googleusercontent.com/-SGQLvgNJUssHLvu6jsdc61Hjvq_rVoxbz2M-LPyNzkQx_7ECmrWf-RlcLxXJkqK3C68Hksu7kAYcYUKX4zDDUeVXV9uczSjas4kWKbaemQQ1pm-bpt7PS5f6KV6nnwoQlMcptcATQ=w1800',
+        ],
+      srcList5: [
+          'https://lh3.googleusercontent.com/iwZ98mhZyOOVsM2KMk6KEK3RFNipcuvYGC5BIqZsbakbFxV6tRd5i8jFeOqetPds4kxvwRmMflHEeeuKjGqIXrr2_Qh1A8JECd2i6A-iUP-qCs-gdE7vW-z0LMRIEIxWh7MOsZ6aOw=w1800',
         ],
     };
   },
