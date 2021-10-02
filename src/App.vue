@@ -21,7 +21,8 @@
     <el-header>
       <div id="nav" style="text-align: right; font-size: 12px">
         <router-link to="/">Home</router-link> |
-        <router-link to="/about">About</router-link>
+        <router-link to="/about">About</router-link> |
+        <router-link to="/pdf">PDF</router-link>
       </div>
       <router-view/>
     </el-header>
