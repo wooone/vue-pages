@@ -6,19 +6,29 @@
     <el-main>
       <el-row :gutter="20">
         
-        <el-col :span="6"> 
-            <el-image :src="src" :preview-src-list="srcList"></el-image>
-        </el-col>
         
         <el-col :span="6">
-          <div class="grid-content bg-purple">
-            <el-image :src="src1" :preview-src-list="srcList1"></el-image>
+            <div class="item1_content">
+            <router-link to="/item1">
+            <el-image :src="src"></el-image>
+            </router-link>
+            </div>
+        </el-col>
+        
+        
+        <el-col :span="6">
+          <div class="item2_content">
+            <router-link to="/item2">
+            <el-image :src="src1"></el-image>
+            </router-link>
           </div>
         </el-col>
 
         <el-col :span="6">
-          <div class="grid-content bg-purple">
+          <div class="item2_content">
+            <router-link to="/item3">
             <el-image :src="src2" :preview-src-list="srcList2"></el-image>
+            </router-link>
           </div>
         </el-col>
 
@@ -45,6 +55,7 @@
 
   </el-container>
 </el-container>
+<footer></footer>
 </template>
 
 
@@ -57,8 +68,8 @@ import '/node_modules/element-plus/dist/index.css'
 export default defineComponent({
   name: "ElementPlus",
   components: {
-    ElContainer,ElMain,ElImage
-    ,ElCol,ElRow
+    ElContainer,ElMain,ElImage,
+    ElCol,ElRow
   },
   data() {
     return {
@@ -74,15 +85,6 @@ export default defineComponent({
           "https://lh3.googleusercontent.com/t1qJHswEGZHFhJwINwvSNxx-M5rasasrnAJd3VGa2dnJsDz-kKG9tv616MZncnLQdNdtt9aYIp6RbofcYXsumSSubBVHBPQl9Cg5fue5BdPIGzt9zb27b5SLzO2A9j-S94AOpFcXNw=w1200",
        src5:
           "https://lh3.googleusercontent.com/1yXUi5qQ9zAS0gvU8N5oAuQf5htY3Zy23f9tpdZFCGv0fzB68I-ANpvpVHPV0P2uo4cOO62F5oD7dvT7yLKAqYRvHcpP5s9wLVTzd-pXO_gMmpySOhcqU7qOwP6H9_52oXw_H98uHg=w1200",  
-      srcList: [
-          'https://lh3.googleusercontent.com/-4u8K2oQPGJrcH-lTkhfgX2D4aZVqJwHE76eY7qX96vOT18pKMOEUFcq1vbrkVJtUILf63Ah4hiI22tw1T1exMMF-CSKZ91ak0CEgKSp5SzCIOwGqMKNd_s7EtBeJz50lW3tTAhl-g=w2400',
-
-        ],
-      srcList1: [
-          'https://lh3.googleusercontent.com/lym6CjGJri7Nu25v-MLB9TqNu2RltPWqI9TzBViNnND0fIdUCTqgtLfY1otUaINQcvEAKTtV1HtHuqZLtLLo5dUwXqQuiUvaB4K1L13ObAFPcWtpuhMs4uCYibz8e9le8VqJRY75Dw=w1800',
-          'https://lh3.googleusercontent.com/TO6B2n_MLcBv1ruwyW7e3fJqNXqATP3MX2hCIahW3w-5isdA_lx7woRRCAjCDQCr_aD_hp_n-GWqkQ-EISWYSX4mDleb6R6v0lEGWt2aQM2ARl38P8A2paKTyb5sir2hwBhuE_1tGg=w1800',
-          'https://lh3.googleusercontent.com/mtE4qgwm5RJWMOY4qVVyOvysBRNNq8wssfZwyn3NwQiCqAAbvMiKXtNe23YxEqnYTq2Yz6qz8jtf0ZuSzeDr_s2-c5TxVrH4uurcvQlCW9X-N4dKcq-zjoyGu_-vYM3elMU4zYREBQ=w1800',
-        ],
       srcList2: [
           'https://lh3.googleusercontent.com/GgzRXsbqBkQMLyVL0EppZtGunL8zvo3NTsAv8AJW749L2x9FVwHWRE4tf5W3cHLwU47mctSwIi-uviiyAZIplOscYVOeJ12s7LrenEBEXJoXidO5kn47vOHniGq2XyZ_t_WFJ38pVA=w1800',
           'https://lh3.googleusercontent.com/T-umkREC2_u2mPpi8ukcmDr9osHDYboeuAM0H7gF18ll050CwL9byau7BAbSf2Sp7pEHtb3tPOXCf4hLizkh_lMWMu50YjZstvkkAaK-N255gF7VZfeQESCh8yuToTsWo5CzyFG38g=w1800',
@@ -120,18 +122,12 @@ export default defineComponent({
     color: var(--el-text-color-primary);
     line-height: 60px;
   }
-
-  .el-aside {
-    color: inherit;
-    font-family: sans-serif;
-    font-size: 13px;
+  .item1_content:hover{
+    opacity:0.6;
+    transition: all .2s ease-in-out;
   }
-  .el-container {
-    overflow: hidden;
-  }
-  .icon_social{
-    text-align: center;
-    padding: 0;
-    margin-top: 400px;
+  .item2_content:hover{
+    opacity:0.6;
+    transition: all .2s ease-in-out;
   }
 </style>

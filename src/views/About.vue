@@ -1,34 +1,52 @@
 <template>
-<el-container style="height: 650px">
-
-  <el-container>
+<el-container style="height: 620px">
 
     <el-main style="text-align: center;">
-    <el-row  style="text-align: center;">
-<img src="../assets/avatar1.png" alt="" style="width:30%; margin-left:35%">
-<p style="margin-left:18%; margin-right:18%; margin-top:3%; font-size:11px; line-height:25px">嗨，大家好，我是晏。2021年從研究所畢業成為社會新鮮人，很希望能夠成為一位UI Designer，於是任性的跑到設計研究所進修。不過求職之路漫漫，學海之路更是慢慢 (゜∀。) 
-從資管畢業後，除了寫寫一些簡單的網站，也熱衷於嘗試各類型的框架。透過研究所的幫助下，在設計的方面，也透過學校老師以及實習的方式學習到許多以前從未想過的內容。對跨領域的人來說，似乎總在體制下漂泊，不過我依舊熱衷於做任何自己感到快樂的事情。d(`･∀･)b 例如打電動
-</p>
-<p style="margin-left:18%; margin-right:18%; font-size:11px; line-height:25px">我正在尋找一個職位是在電腦軟體相關或是平面設計相關團隊擔任UI設計或是前端工程，短期目標是發揮目前所長，快速融入並投身各項專案。長期目標希望參與更多的用戶研究以了解從未碰過的領域UX。<br><b>#章魚餐廳的服務生 #謹慎的收藏家 #銅牌遊蕩者</b></p>
+      <div class="about-content">
+        <p class="about-title">Yan-Yu Wang</p>
+          <div class="left-box">
+            <p class="about-subtitle">OBJECTIVE</p>
+            <p class="about-object">
+              Highly motivated commercial design graduate looking to learn new skills and grow professionally, also enthusiastic about interactive art and technology. Want to find a company that I can grow with them.
+            </p>
+            <p class="about-c-object">我正在尋找一個職位是在電腦軟體相關或是平面設計相關團隊擔任UI設計或是前端工程，短期目標是發揮目前所長，快速融入並投身各項專案。長期目標希望參與更多的用戶研究以了解從未碰過的領域UX。</p>
+            <p class="about-subtitle">SKILLS</p>
+            <p class="about-skills">HTML, CSS, Sketch, JavaScript, Vue.js, illustrator, Node.js, Git</p>
+            <p>123</p>
+          </div>
+          <div class="right-box">
+            <p class="about-subtitle">EDUCATION</p>
+              <p class="about-object">
+              Master of Commercial Design / Bachelor of Information Management | <a href="https://goo.gl/maps/Hd7vWiC2kF8BEi5o8" class="link-school">Chung Yuan Christian University</a>
+              </p>
+              <p class="about-edu-school">•  Relevant Coursework: Transmedia Design, Graphic Design, Typography, Consumer Psychology</p>
+              <p class="about-edu-school">•  Relevant Coursework: Java, C#, Database, Multimedia Programming, Data Structures</p>
+              <p class="about-subtitle"></p>
 
-      
-      </el-row>
+              <p class="about-subtitle">CONTACT</p>
+              <p class="about-object">
+                <a class="icon_social_fb" href="https://www.facebook.com/yu.stone.3/" style="margin-right:20px; color: inherit">
+                <font-awesome-icon :icon="['fab', 'facebook-f']" /></a>
+                <a class="icon_social_ig" href="https://www.instagram.com/stnyu/" style="color: inherit;">
+                <font-awesome-icon :icon="['fab', 'instagram']" /></a>
+              </p>
+          </div>
+      </div>
     </el-main>
-
-  </el-container>
 </el-container>
 </template>
 
 
+
 <script>
 import { defineComponent } from 'vue'
-import { ElContainer,ElMain,ElRow } from 'element-plus'
+import { ElContainer,ElMain } from 'element-plus'
 import '/node_modules/element-plus/dist/index.css'
 
 export default defineComponent({
   name: "ElementPlus",
   components: {
-    ElContainer,ElMain,ElRow,
+    ElContainer,ElMain,
   },
   data() {
     return {
@@ -56,7 +74,7 @@ export default defineComponent({
 
   .el-aside {
     color: inherit;
-    font-family: sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 13px;
   }
   .el-container {
@@ -67,4 +85,93 @@ export default defineComponent({
     padding: 0;
     margin-top: 400px;
   }
+  .about-title{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 3em;
+    font-weight: 600;
+  }
+  .about-content{
+    width:100%;
+    margin: auto;
+  }
+  .left-box{
+    width: 50%;
+    float:left;
+    overflow: hidden;
+    margin: auto;
+  }
+  .right-box{
+    width: 50%;
+    float:right;
+    overflow: hidden;
+    margin: auto;
+  }
+  .about-object{
+    margin-left:5%; 
+    margin-right:5%; 
+    font-size:16px; 
+    font-weight: 500;
+    line-height:25px;
+  }
+  .about-c-object{
+    margin-left:5%; 
+    margin-right:5%; 
+    font-size:11px; 
+    line-height:25px
+  }
+  .about-subtitle{
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    font-size: 2em;
+    font-weight: 600;
+  }
+  .about-skills{
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  .about-edu-school{
+    margin-left:10%; 
+    margin-right:10%; 
+    font-size: 16px;
+    font-weight: 500;
+    line-height:25px;
+  }
+
+  .link-school{
+    color: gray;
+    text-decoration: none;
+  }
+
+  .link-school:hover{
+    color: rgb(228, 228, 228);
+  }
+
+
+  @media screen and (min-width:300px) and (max-width:800px){
+
+  .about-subtitle{
+    font-size: 12px;
+    font-weight: 600;
+  }
+  .about-object{
+    margin: 0%; 
+    font-size:12px; 
+    line-height:16px;
+  }
+  .about-skills{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+  }
+  .about-c-object{
+    margin-top: 5%; 
+    font-size:12px; 
+    line-height:16px;
+  }
+  .about-edu-school{
+    margin-top: 5%; 
+    font-size:12px; 
+    line-height:16px;
+  }
+}
 </style>
