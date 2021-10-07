@@ -19,14 +19,12 @@
 
   <el-container>
     <el-header>
-      <el-affix :offset="20">
       <div id="nav" style="text-align: right; font-size: 12px">
         <router-link to="/">Home</router-link> |
         <router-link to="/about">About</router-link> |
         <router-link to="/pdf">PDF</router-link>
       </div>
       <router-view/>
-      </el-affix>
     </el-header>
 
     <el-main>
@@ -37,11 +35,11 @@
 </template>
 
 <script>
-import { ElHeader,ElAside,ElAvatar,ElMain,ElContainer,ElAffix} from 'element-plus'
+import { ElHeader,ElAside,ElAvatar,ElMain,ElContainer} from 'element-plus'
 
 export default ({
   components: {
-    ElHeader,ElAside,ElAvatar,ElMain,ElContainer,ElAffix
+    ElHeader,ElAside,ElAvatar,ElMain,ElContainer
   },
 })
 </script>

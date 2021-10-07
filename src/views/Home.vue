@@ -33,7 +33,7 @@
         </el-col>
 
         <el-col :span="6">
-          <div class="grid-content bg-purple">
+          <div class="item3_content">
             <el-image :src="src3" :preview-src-list="srcList3"></el-image>
           </div>
         </el-col>
@@ -41,12 +41,14 @@
 
       <el-row :gutter="20">
         
-        <el-col :span="6"> 
+        <el-col :span="6">
+          <div class="item2_content"> 
             <el-image :src="src4" :preview-src-list="srcList4"></el-image>
+          </div>
         </el-col>
         
         <el-col :span="6">
-          <div class="grid-content bg-purple">
+          <div class="item2_content">
             <el-image :src="src5" :preview-src-list="srcList5"></el-image>
           </div>
         </el-col>
@@ -130,4 +132,14 @@ export default defineComponent({
     opacity:0.6;
     transition: all .2s ease-in-out;
   }
+
+  @media screen and (min-width:300px) and (max-width:800px){
+  
+  .item1_content, .item2_content, .item3_content{
+    width: 100%;
+    height: auto;
+
+  }
+  
+}
 </style>
