@@ -1,39 +1,39 @@
 <template>
 <el-container style="height: 620px">
   <el-main>
-  <p class="item-title">Logo Redesign..</p>
-    <img class="cis-1" src="../assets/card.png" alt="">
-    <p class="item-subtitle">Chiayi City Government Logo Redesign</p>
+  <p class="item-title">VIDEO CHAT UI DESIGN..</p>
+    <img class="vc-1" src="../assets/videochat/vc-mockup-01.jpg" alt="">
+    <p class="item-subtitle">獨立視訊軟體 UI設計</p>
     <div class="item-content item-c-content">
       <div class="item-left-box">
-        <p>Use the primary vision design as the idea to set the website's primary colors, plan the website's prototype, and cooperate with a partner to use React.js to do programming.</p>
+        <p>透過與客戶、RD開會後取得客戶之視訊系統需求，設計出簡易的Wireframe與RD討論操作步驟與流程、確認使用元素以及風格。而後即開始製作mockup與prototype，最後與老闆、客戶和RD做收尾確認。</p>
       </div>
       <div class="item-right-box">
-        <img class="cis-2" src="../assets/cis/logotype@3x.png" alt="">
+        <p>Illustrator , PhotoShop <br> Sketch , Marvel (Prototype Tool) <br> Git , Github</p>
       </div>
     </div>
       <div class="item-mobile-box">
-        <img class="cis-2" src="../assets/cis/logotype@3x.png" alt="">
+        <p>Illustrator , PhotoShop <br> Sketch , Marvel (Prototype Tool) <br> Git , Github</p>
       </div>
       <div class="item-content">
-        <img class="cis-3" src="../assets/cis/grid@3x.png" alt="">
+        <img class="vc-3" src="../assets/videochat/vc-mockup-03.jpg" alt="">
       </div>
 
       <div class="item-content item-c-content">
         <div class="item-left-box">
-          <img class="cis-4" src="../assets/cis/card-front@3x.png" alt="">
+          <img class="vc-4" src="../assets/videochat/vc-demo-04.jpg" alt="">
         </div>
         <div class="item-right-box">
-          <img class="cis-4" src="../assets/cis/card-back@3x.png" alt="">
+          <img class="vc-4" src="../assets/videochat/vc-demo-05.jpg" alt="">
         </div>
       </div>
       <div class="item-mobile-box">
-        <img class="cis-4" src="../assets/cis/card-back@3x.png" alt="">
+        <img class="vc-4" src="../assets/videochat/vc-demo-05.jpg" alt="">
       </div>
       <div class="item-content">
-        <img class="cis-5" src="../assets/cis/compare.png" alt="">
+        <img class="vc-5" src="../assets/videochat/vc-demo-06.jpg" alt="">
       </div>
-      <div class="item-content"></div>
+      <div class="item-content item-c-content"></div>
   </el-main>
 </el-container>
 <footer></footer>
@@ -60,30 +60,33 @@ export default defineComponent({
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');
 
-.cis-1{
-  width: 100%;
+.vc-1{
+  width: 80%;
   height: auto;
 
 }
-.cis-2{
+.vc-2{
+  width: 70%;
+  height: auto;
+}
+
+.vc-3{
   width: 100%;
   height: auto;
 }
 
-.cis-3{
-  width: 100%;
-  height: auto;
-}
-
-.cis-4{
+.vc-4{
   width:90%;
   box-shadow: 5px 5px 20px #cccccc;
+  margin-bottom: 5%;
 }
 
-.cis-5{
+.vc-5{
   width: 90%;
   height: auto;
 }
+
+
 .item-title{
   font-family: 'Gill Sans', 'Noto Sans TC', sans-serif;
   font-size: 3rem;
@@ -145,5 +148,7 @@ export default defineComponent({
     max-width: 100%;
     overflow: hidden;
   }
+
+  
 }
 </style>

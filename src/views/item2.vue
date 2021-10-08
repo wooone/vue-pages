@@ -1,5 +1,5 @@
 <template>
-<el-container style="height: 620px">
+<el-container style="height: 590px">
   <el-main>
   <p class="item-title">Web Design..</p>
     <img class="exhibition-web-1" src="https://lh3.googleusercontent.com/DUcNxGwQaAJeBl6i-QUCWhu7lYBCZz3y8ufmizrUH0q5NXU0lr1RNzcNjFSo0WOF894iHm1i6OAPYJRqtuCkQD4rUk9EXjmljY6I6mguQeZk4uCi4b_LKFUmqH2_2s7EgAuEznFatA=w1200" alt="">
@@ -24,6 +24,7 @@
       <div class="item-content">
         <img class="exhibition-web-4" src="../assets/scenemockup.jpg" alt="">
       </div>
+      <div class="item-content"></div>
   </el-main>
 </el-container>
 <footer></footer>
@@ -122,8 +123,6 @@ export default defineComponent({
     max-width: 100%;
     overflow: hidden;
   }
-
-
   
 }
 </style>

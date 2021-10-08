@@ -4,19 +4,17 @@
   <el-container>
 
     <el-main>
-      <el-row :gutter="20">
+      <el-row :gutter="20">       
         
-        
-        <el-col :span="6">
+        <el-col :span="8">
             <div class="item1_content">
             <router-link to="/item1">
             <el-image :src="src"></el-image>
             </router-link>
             </div>
         </el-col>
-        
-        
-        <el-col :span="6">
+           
+        <el-col :span="8">
           <div class="item2_content">
             <router-link to="/item2">
             <el-image :src="src1"></el-image>
@@ -24,34 +22,41 @@
           </div>
         </el-col>
 
-        <el-col :span="6">
+        <el-col :span="8">
           <div class="item2_content">
             <router-link to="/item3">
-            <el-image :src="src2" :preview-src-list="srcList2"></el-image>
+            <el-image :src="src2"></el-image>
             </router-link>
           </div>
         </el-col>
 
-        <el-col :span="6">
-          <div class="item3_content">
-            <el-image :src="src3" :preview-src-list="srcList3"></el-image>
-          </div>
-        </el-col>
+        
       </el-row>
 
       <el-row :gutter="20">
         
-        <el-col :span="6">
-          <div class="item2_content"> 
-            <el-image :src="src4" :preview-src-list="srcList4"></el-image>
+        <el-col :span="8">
+          <div class="item2_content">
+            <router-link to="/item4"> 
+            <el-image :src="src4"></el-image>
+            </router-link>
           </div>
         </el-col>
         
-        <el-col :span="6">
+        <el-col :span="8">
           <div class="item2_content">
-            <el-image :src="src5" :preview-src-list="srcList5"></el-image>
+            <router-link to="/item5"> 
+            <el-image :src="src5"></el-image>
+            </router-link>
           </div>
         </el-col>
+
+        <el-col :span="8">
+          <div class="item3_content">
+            <el-image :src="src3" :preview-src-list="srcList3"></el-image>
+          </div>
+        </el-col>
+
       </el-row>
     </el-main>
 
