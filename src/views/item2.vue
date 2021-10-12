@@ -2,21 +2,21 @@
 <el-container style="height: 590px">
   <el-main>
   <p class="item-title">Web Design..</p>
-    <img class="exhibition-web-1" src="https://lh3.googleusercontent.com/DUcNxGwQaAJeBl6i-QUCWhu7lYBCZz3y8ufmizrUH0q5NXU0lr1RNzcNjFSo0WOF894iHm1i6OAPYJRqtuCkQD4rUk9EXjmljY6I6mguQeZk4uCi4b_LKFUmqH2_2s7EgAuEznFatA=w1200" alt="">
+    <img class="exhibition-web-1" src="../assets/3.jpg" alt="">
     <p class="item-subtitle">A Website about online exhibition</p>
     <div class="item-content item-c-content">
       <div class="item-left-box">
         <p>Use the primary vision design as the idea to set the website's primary colors, plan the website's prototype, and cooperate with a partner to use React.js to do programming.</p>
       </div>
       <div class="item-right-box">
-        <img class="exhibition-web-1" src="../assets/mobilemockup.png" alt="">
+        <img class="exhibition-web-1" src="../assets/mobilemockup.jpg" alt="">
       </div>
     </div>
       <div class="item-mobile-box">
-        <img class="exhibition-web-2" src="../assets/mobilemockup.png" alt="">
+        <img class="exhibition-web-2" src="../assets/mobilemockup.jpg" alt="">
       </div>
       <div class="item-content">
-        <img class="exhibition-web-3" src="../assets/mac-mockup.png" alt="">
+        <img class="exhibition-web-3" src="../assets/mac-mockup.jpg" alt="">
       </div>
       <div class="item-content">
         <img class="exhibition-web-4" src="../assets/storemock.png" alt="">

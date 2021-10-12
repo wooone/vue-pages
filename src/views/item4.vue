@@ -7,7 +7,7 @@
     <div class="item-content item-c-content">
       <div class="item-left-box">
         <p>離都市最近的桃花源宵裡。以水滴與石頭為元素，代表宵裡的特色「湧泉」與「壘石」，當地除了擁有自然資源以外，還蘊含豐富的人文特色</p>
-        <p style="color:darkgray; font-weight:300; letter-spacing:2px">WORDPRESS | HTML | CSS | JS | Elementor</p>
+        <p class="skill-text" style="color:darkgray; font-weight:300; letter-spacing:2px">WORDPRESS | HTML | CSS | JS | Elementor</p>
       </div>
       <div class="item-right-box">
         <img class="xiaoli-2" src="../assets/xiaoli/logo.png" alt="">
@@ -129,6 +129,10 @@ export default defineComponent({
 .item-space{
   display: flex;
   margin: 0%;
+}
+
+.skill-test::hover{
+    
 }
 
   @media screen and (min-width:300px) and (max-width:800px){
