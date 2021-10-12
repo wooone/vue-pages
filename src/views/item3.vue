@@ -6,7 +6,8 @@
     <p class="item-subtitle">Chiayi City Government Logo Redesign</p>
     <div class="item-content item-c-content">
       <div class="item-left-box">
-        <p>Use the primary vision design as the idea to set the website's primary colors, plan the website's prototype, and cooperate with a partner to use React.js to do programming.</p>
+        <p>由朱嘉樺老師指導，於課堂完成的CIS重製作品。身為嘉義的在地子民，有感嘉義縣因阿里山觀光鼎盛的緣故，而有許多標誌重新設計的契機。反觀嘉義市有較少的設計提案，因此想為嘉義市提出一個新的點子。此次設計根據北門車站所展現出的形象，為嘉義市重新打造了一個LOGO。
+        </p>
       </div>
       <div class="item-right-box">
         <img class="cis-2" src="../assets/cis/logotype@3x.png" alt="">
@@ -18,7 +19,9 @@
       <div class="item-content">
         <img class="cis-3" src="../assets/cis/grid@3x.png" alt="">
       </div>
-
+      <div class="item-content">
+        <img class="cis-5" src="../assets/cis/color-p.jpg" alt="">
+      </div>
       <div class="item-content item-c-content">
         <div class="item-left-box">
           <img class="cis-4" src="../assets/cis/card-front@3x.png" alt="">
