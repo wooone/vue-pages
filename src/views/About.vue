@@ -17,7 +17,7 @@
           <div class="right-box">
             <p class="about-subtitle">EDUCATION</p>
               <p class="about-object">
-              Master of Commercial Design / Bachelor of Information Management | <a href="https://goo.gl/maps/Hd7vWiC2kF8BEi5o8" class="link-school">Chung Yuan Christian University</a>
+              Master of Commercial Design / Bachelor of Information Management | <a href="https://goo.gl/maps/Hd7vWiC2kF8BEi5o8" class="link-school"><br>Chung Yuan Christian University</a>
               </p>
               <p class="about-edu-school">•  Relevant Coursework: Transmedia Design, Graphic Design, Typography, Consumer Psychology</p>
               <p class="about-edu-school">•  Relevant Coursework: Java, C#, Database, Multimedia Programming, Data Structures</p>

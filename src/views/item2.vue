@@ -6,7 +6,7 @@
     <p class="item-subtitle">A Website about online exhibition</p>
     <div class="item-content item-c-content">
       <div class="item-left-box">
-        <p>Use the primary vision design as the idea to set the website's primary colors, plan the website's prototype, and cooperate with a partner to use React.js to do programming.</p>
+        <p>以主視覺為設計思路，規劃網站主色調，和委託人討論出User Story後，因網站特性關係就無花太多心力於Functional Map以及Flow Chart的規劃。寫出簡易的UI Flow後與合作夥伴討論合宜性。確認無誤後開始產製Mockup與Prototype，並且與夥伴使用React進行製作。</p>
       </div>
       <div class="item-right-box">
         <img class="exhibition-web-1" src="../assets/mobilemockup.jpg" alt="">
